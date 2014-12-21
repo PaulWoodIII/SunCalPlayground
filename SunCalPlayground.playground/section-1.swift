@@ -99,7 +99,7 @@ let event = SunEvent.SunEventSet
 // calculation of Julian Day Number (http://en.wikipedia.org/wiki/Julian_day ) from Gregorian Date
 let calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
 
-let zenith = 90.0
+let zenith = 90.0 + 50.0/60.0
 
 let components = calendar.components(.CalendarUnitYear | .CalendarUnitMonth | .CalendarUnitDay | .CalendarUnitTimeZone , fromDate: inDate)
 
